@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário MaxJobs</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" type="module" defer></script>
+</head>
+<body>
+    <div class="container-box">
+        <section class="sectionLeft">
+            <h1>MaxJobs</h1>
+            <h2>O emprego que você procura está no Maxjobs!</h2>
+
+            <div class="container-ofertas">
+                <div>
+                    <span>&#10003;</span>
+                    <p>Candidate-se às melhores vagas do país.</p> 
+                </div>
+                <div>
+                    <span>&#10003;</span>
+                    <p>Fique visível para milhares de empresas.</p>
+                </div>
+                <div>
+                    <span>&#10003;</span>
+                    <p>Receba vagas adequadas ao seu perfil.</p>
+                </div>
+                <div>
+                    <span>&#10003;</span>
+                    <p>Conheça as empresas por dentro.</p>
+                </div>
+            </div>
+        </section>
+        <section class="sectionRight">
+            <p class="usuarioLogin">Já usa o Maxjobs? <a href="#">Login</a></p>
+            <div class="tituloRight">
+                <h1>O seu próximo emprego está aqui.</h1>
+                <p class="candidate">Acesse e candidate-se à milhares de vagas.</p>
+            </div>
+
+            <form class="form" data-form>
+                <fieldset>
+                    <input type="email" class="email" name="email" data-email placeholder="Email: " required>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset>
+                    <input type="text" class="name" name="name" data-name placeholder="Nome: " minlength="4" required>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+
+                <div class="container-dados-cep-carree">
+                    <fieldset>
+                        <input type="text" class="cep" name="cep" data.cep placeholder="CEP: " minlength="8" maxlength="12" required>
+                        <span class="mensagem-erro"></span>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" class="carree" name="carree" data-carree placeholder="Cargo: " required>
+                        <span class="mensagem-erro"></span>
+                    </fieldset>
+                </div>
+                <div class="container-terms">
+                    <div class="container-checkbox">
+                        <fieldset>
+                            <input type="checkbox" class="terms" name="terms" data-terms required> 
+                            <span>Lí e aceito as Condições Legais e a Política de Privacidade do MaxJobs.</span>
+                            <span class="mensagem-erro"></span>
+                        </fieldset>
+                    </div>
+                    <div class="container-checkbox">
+                        <fieldset>  
+                            <input type="checkbox" class="terms-aut" name="terms-aut" data-terms-aut>
+                            <span class="autorizacao-terms">Autorizo o Maxjobs a enviar comunicações comerciais sobre produtos, serviços e eventos dos seus parceiros e colaboradores</span> 
+                            <span class="mensagem-erro"></span>
+                        </fieldset>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-cadastro">CADASTRAR-SE</button>
+            </form>
+            
+        </section>
+    </div>
+</body>
+</html>
